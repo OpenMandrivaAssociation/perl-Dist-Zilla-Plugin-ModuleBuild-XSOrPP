@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:	Add a --pp option to your Build.PL to force an XS-less build
 License:	GPL+ or Artistic
