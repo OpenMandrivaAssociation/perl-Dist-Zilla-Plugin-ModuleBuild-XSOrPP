@@ -1,15 +1,15 @@
 %define upstream_name    Dist-Zilla-Plugin-ModuleBuild-XSOrPP
-%define upstream_version 0.02
+%define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Add a --pp option to your Build.PL to force an XS-less build
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://git.urth.org/Dist-Zilla-Plugin-ModuleBuild-XSOrPP
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Dist-Zilla-Plugin-ModuleBuild-XSOrPP-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
