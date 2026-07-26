@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-ModuleBuild-XSOrPP
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.04
+Release:	2
 
 Summary:	Add a --pp option to your Build.PL to force an XS-less build
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://git.urth.org/Dist-Zilla-Plugin-ModuleBuild-XSOrPP
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Dist-Zilla-Plugin-ModuleBuild-XSOrPP-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Dist-Zilla-Plugin-ModuleBuild-XSOrPP-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ Obviously, this is only useful if your module can work without its XS
 component.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
